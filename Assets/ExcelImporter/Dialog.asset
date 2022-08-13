@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f11bca8d4210e34b9e988c30dfafa9e, type: 3}
+  m_Name: Dialog
+  m_EditorClassIdentifier: 
+  Enter:
+  - branch: 1
+    name: "\uC8FC\uC778\uACF5"
+    dialog: "\uC548\uB155"
+  - branch: 1
+    name: "\uC678\uACC4\uC778"
+    dialog: ??
+  - branch: 1
+    name: "\uC8FC\uC778\uACF5"
+    dialog: "\uB098\uB294 \uC8FC\uC778\uACF5"
+  - branch: 2
+    name: "\uC678\uACC4\uC778"
+    dialog: "\uB098\uB294 \uC678\uACC4\uC778"
+  - branch: 2
+    name: "\uC8FC\uC778\uACF5"
+    dialog: "\uCE5C\uD558\uAC8C \uC9C0\uB0B4\uC790"
+  - branch: 2
+    name: "\uC678\uACC4\uC778"
+    dialog: "\uADF8\uB798"
