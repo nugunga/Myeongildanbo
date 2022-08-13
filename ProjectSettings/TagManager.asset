@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Stool
+  - Red
+  - Orange
+  - Yellow
+  - Green
+  - Blue
   layers:
   - Default
   - TransparentFX
