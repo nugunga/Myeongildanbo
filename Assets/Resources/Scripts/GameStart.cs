@@ -25,7 +25,7 @@ public class GameStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ( !GameMng.GetIns.GameStart && Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) )
+        if (!GameMng.GetIns.GameStart && Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
         {
             if (Key == false)
             {
@@ -36,13 +36,14 @@ public class GameStart : MonoBehaviour
             }
         }
 
-        if (IsFade && !Color255 )
+        if (IsFade && !Color255)
         {
             colora += Time.deltaTime;
             Fade.color = new Color(0, 0, 0, colora);
             if (colora >= 2)
             {
-                m_Text.SetActive(false);
+                Back.SetActive(false);
+                //m_Text.SetActive(false);
                 colora = 1;
                 IsFade = false;
                 IsTimeCheck = true;
@@ -56,9 +57,12 @@ public class GameStart : MonoBehaviour
             if (colora <= 0)
             {
                 GameMng.GetIns.GameStart = true;
-                Back.SetActive(false);
+                GameMng.GetIns.CameraPlayerView = true;
+                GameMng.GetIns.CameraUFOView = false;
+
                 gameObject.SetActive(false);
             }
         }
     }
+
 }

@@ -15,4 +15,7 @@ public class GameMng
         }
     }
     public bool GameStart = false;
+
+    public bool CameraPlayerView = false;
+    public bool CameraUFOView = false;
 }

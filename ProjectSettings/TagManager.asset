@@ -10,6 +10,7 @@ TagManager:
   - Yellow
   - Green
   - Blue
+  - UFO
   layers:
   - Default
   - TransparentFX
