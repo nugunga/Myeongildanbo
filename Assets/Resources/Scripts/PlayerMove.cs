@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
+
 
 public class PlayerMove : MonoBehaviour
 {
-
     Rigidbody2D rigid;
     bool IsJump = true;
     // Start is called before the first frame update
@@ -16,7 +18,9 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(GameMng.GetIns.GameStart)
         Move();
+
         //Jump();
     }
 
@@ -31,6 +35,8 @@ public class PlayerMove : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && IsJump == true)
         {
+
+
             rigid.AddForce(Vector2.up * 5, ForceMode2D.Impulse);
 
             IsJump = false;
